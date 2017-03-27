@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.miglezlor.pmdmproyecto3.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:id="@+id/textoMensaje"
+        android:layout_weight="0.03"
+        android:text="Mensaje" />
+
+    <EditText
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mensaje"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="@string/destinatario"
+        android:id="@+id/textdestino"
+        android:layout_weight="0.03" />
+
+
+    <EditText
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/destinatario" />
+
+    <CheckBox
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Privado"
+        android:id="@+id/privado"
+        android:checked="false"
+        android:layout_below="@+id/destino"
+        android:layout_marginTop="43dp"
+        android:layout_toStartOf="@+id/destino" />
+
+    <TextView
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textmensaje"
+        android:layout_weight="0.03" />
+
+
+</LinearLayout>
